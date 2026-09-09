@@ -1,8 +1,8 @@
 class Ditooctl < Formula
   desc "Direct remote for the Divoom Ditoo pixel display"
   homepage "https://github.com/leoshimo/ditooctl"
-  url "https://github.com/leoshimo/ditooctl/releases/download/v0.1.3/ditooctl-0.1.3-macos-universal.tar.gz"
-  sha256 "8a6b6f6cf1c8e58022d422ee3283dd1f44ccbd3575a275c58efaa1b4c477d5bb"
+  url "https://github.com/leoshimo/ditooctl/releases/download/v0.1.4/ditooctl-0.1.4-macos-universal.tar.gz"
+  sha256 "71f4dbe9388bc4d0a6b749f27c1f51fbe481815dd971f1f1db975795c06a03cb"
   license "MIT"
   depends_on :macos => :ventura
 
@@ -11,6 +11,6 @@ class Ditooctl < Formula
   end
 
   test do
-    assert_equal "0.1.3", shell_output("#{bin}/ditooctl --version").strip
+    assert_equal "0.1.4", shell_output("#{bin}/ditooctl --version").strip
   end
 end
